@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical" >
+
+    android:layout_marginBottom="30dp"
+
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:text="my Title"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:id="@+id/mytext"-->   android:background="@drawable/getstarted"
+    <!--android:textSize="18sp" />-->
+    <!--android:letterSpacing="1.2"--> android:width="161dp"
+
+    <!--<android.support.v7.widget.Toolbar--> android:background="@drawable/getstarted"
+    <!--style="@style/MyToolbarStyle"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"--> android:textSize="20sp"
+    android:letterSpacing="0.9"
+    <!--android:gravity="center_vertical">-->
+    <TextView
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fontFamily="Roboto"
+        android:textColor="#FFFFFFFF"
+        android:layout_gravity="center_vertical"
+        android:lineSpacingMultiplier="1.0"
+        android:text="USER SIGN UP "
+
+        />
+
+    android:height="59dp"
+
+    <!--</android.support.v7.widget.Toolbar>-->
+</LinearLayout>

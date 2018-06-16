@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD7D0D7"
+    android:orientation="vertical"
+    tools:context="com.fegas.datacapture.UserSignUpActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal"
+        android:background="#FFD7D0D7"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/include"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="9.9"
+            android:fontFamily="Roboto"
+            android:textColor="#FFFFFFFF"
+            android:gravity="center_vertical|center_horizontal"
+            android:lineSpacingMultiplier="1.0"
+            android:text="USER SIGN UP "
+            app:layout_constraintBottom_toTopOf="@+id/login_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/credentials_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="69dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.281">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="GENDER"
+        >
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:hint="MARITAL STATUS"
+        >
+
+
+        <EditText
+            android:id="@+id/marital_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:hint="COUNTRY"
+        >
+
+
+        <EditText
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:hint="DATE OF BIRTH"
+        >
+
+
+        <EditText
+            android:id="@+id/date_of_birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="38dp"
+        android:hint="NATIONALITY"
+        >
+
+
+        <EditText
+            android:id="@+id/nationality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" />
+
+    </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginLeft="125dp"
+        android:background="@drawable/getstarted"
+        android:text="Next Step"
+        android:textColor="#FFFFFF"
+        android:onClick="secondStep"
+        app:layout_constraintBottom_toBottomOf="@+id/credentials_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/credentials_card"
+        app:layout_constraintVertical_bias="1.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
+    <!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#FFD7D0D7"-->
+    <!--tools:context="com.fegas.datacapture.UserLoginActivity">-->
+
+
+    <!---->
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:id="@+id/credentials_card"-->
+
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginBottom="89dp"-->
+    <!--android:layout_marginLeft="59dp"-->
+    <!--android:layout_marginRight="60dp"-->
+    <!--android:layout_marginTop="106dp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintVertical_bias="0.281">-->
+    <!--android:layout_width="241dp"-->
+    <!--android:layout_height="445dp"-->
+
+
+
+
+
+    <!--</android.support.v7.widget.CardView>-->
+
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/edit_text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:srcCompat="@mipmap/ic_launcher"-->
+    <!--android:layout_marginBottom="8dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:src="@drawable/ic_launcher_foreground"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/credentials_card"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/credentials_card" />-->
+    <!--</android.support.constraint.ConstraintLayout>-->

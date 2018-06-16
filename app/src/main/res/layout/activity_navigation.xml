@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/getstarted"
+    android:orientation="vertical"
+    tools:context="com.fegas.datacapture.NavigationActivity">
+
+
+
+    <TextView
+        android:id="@+id/userlogin"
+        android:height="19dp"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:letterSpacing="0.9"
+        android:lineSpacingMultiplier="1.0"
+        android:fontFamily="Roboto"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp"
+        android:text="USER SIGNIN"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:onClick="userlogin"
+
+        />
+
+    <TextView
+        android:id="@+id/upload"
+        android:height="19dp"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:letterSpacing="0.9"
+        android:lineSpacingMultiplier="1.0"
+        android:fontFamily="Roboto"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp"
+        android:text="UPLOAD"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:onClick="upload"
+        />
+
+    <TextView
+        android:height="19dp"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:letterSpacing="0.9"
+        android:lineSpacingMultiplier="1.0"
+        android:fontFamily="Roboto"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp"
+        android:text="DOWNLOAD"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:onClick="download"
+        />
+
+    <TextView
+        android:height="19dp"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:letterSpacing="0.9"
+        android:lineSpacingMultiplier="1.0"
+        android:fontFamily="Roboto"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp"
+        android:text="IDENTIFICATION"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:onClick="identification"
+        />
+
+    <TextView
+        android:height="19dp"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:letterSpacing="0.9"
+        android:lineSpacingMultiplier="1.0"
+        android:fontFamily="Roboto"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp"
+        android:text="ABOUT"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:onClick="about"
+        />
+    <TextView
+        android:height="19dp"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:letterSpacing="0.9"
+        android:lineSpacingMultiplier="1.0"
+        android:fontFamily="Roboto"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp"
+        android:text="SETTINGS"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:onClick="settings"
+        />
+
+    <Button
+        android:height="19dp"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:letterSpacing="0.9"
+        android:lineSpacingMultiplier="0.2"
+        android:fontFamily="Roboto"
+        android:textColor="#000000"
+        android:background="#FFFFFF"
+        android:textSize="14sp"
+        android:text="LOGOUT"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_weight="1.1"
+        android:onClick="logout"
+        />
+
+</LinearLayout>
