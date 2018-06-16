@@ -61,29 +61,18 @@ public class UserLoginActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-//                Intent goToCamera = new Intent (UserLoginActivity.this , CameraActivity.class);
-//                startActivity(goToCamera);
-//                startActivityForResult(goToCamera,CAMERA_DATA_REQUEST);
-//            }
-//        });
-//    }
-
-//                imagePath = Environment.getExternalStorageState() + "/images/myimage.jpg";
-//                File file = new File( imagePath );
-//                Uri outputFileUri = Uri.fromFile( file );
 
 
 
                     Intent takePictureIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
 
-                    // Ensure that there's a camera activity to handle the intent
 
                         // Create the File where the photo should go
                         File photoFile = null;
 
                         photoFile = createImageFile();
 
-                        // Error occurred while creating the File
+
 
 
 
@@ -108,47 +97,43 @@ public class UserLoginActivity extends AppCompatActivity {
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        if (requestCode == CAMERA_REQUEST) {
+
 
         if (requestCode == CAMERA_REQUEST && resultCode == RESULT_OK) {
 
-//            // Show the thumbnail on ImageView
-//            Uri imageUri = Uri.parse(mCurrentPhotoPath);
-//            File file = new File(imageUri.getPath());
+
 
             // Show the thumbnail on ImageView
             Uri imageUri = Uri.parse(mCurrentPhotoPath);
             File file = new File(imageUri.getPath());
 
+            File ImageFile= file;
+
+
 
             try {
-                InputStream ims = new FileInputStream(file);
 
+                InputStream ims = new FileInputStream(ImageFile);
                 BitmapDrawable ob = new BitmapDrawable(getResources(), BitmapFactory.decodeStream(ims));
+
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
 
-                    button.setBackground(ob);}
+                    button.setBackground(ob);
+
+                    file.delete();
+
+                }
             } catch (FileNotFoundException e) {
                 return;
             }
 
-//            Bitmap photo = (Bitmap) data.getExtras().get("data");
-//
-//            BitmapDrawable ob = new BitmapDrawable(getResources(), BitmapFactory.decodeStream(ims));
-//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-//
-//                button.setBackground(ob);
-//
+
             }
 
     }
 
 
-//            File image = new File(imagePath);
-//                image.delete();
-//            setImageBitmap(photo);
 
-//        }
 
 
 
@@ -184,19 +169,4 @@ public class UserLoginActivity extends AppCompatActivity {
 
 
 }
-//    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        super.onActivityResult(requestCode, resultCode, data);
-//
-//        if(requestCode==CAMERA_DATA_REQUEST){
-//            if(resultCode==RESULT_OK){
-//
-//                Bitmap photo = (Bitmap) data.getExtras().get("data");
-//                BitmapDrawable ob = new BitmapDrawable(getResources(), photo);
-//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-//                button.setBackground(ob);
-//            }
-//            }
-//        }
-//    }
-//}
+
